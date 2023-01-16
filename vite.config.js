@@ -1,8 +1,10 @@
-import { resolve } from "path";
-import handlebars from "vite-plugin-handlebars";
+import { resolve } from 'path';
+import handlebars from 'vite-plugin-handlebars';
 
 export default {
-    plugins: [handlebars({
-        partialDirectory: resolve(__dirname, 'components')
-    })],
-}
+  plugins: [
+    handlebars({
+      partialDirectory: resolve(__dirname, 'components'),
+    }),
+  ],
+};
