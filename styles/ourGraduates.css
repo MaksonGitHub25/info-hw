@@ -1,7 +1,7 @@
 .our-graduates {
     font-family: sans-serif;
 
-    padding: 3rem;
+    padding: 8rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -34,10 +34,13 @@
 
 .card-title {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    width: 367px;
+    padding-left: 20px;
 }
 
-.card-title {
-    font-weight: bold;
-    font-size: 1.3rem;
+
+img {
+    width: 400px;
+    height: 250px;
 }

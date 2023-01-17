@@ -1,0 +1,54 @@
+:root {
+    --main-background-color: #1f91cf;
+}
+
+.announcement-content {
+    padding: 2rem 6rem;
+
+    font-family: sans-serif;
+    background-color: var(--main-background-color);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.announcement-title {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.announcement-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.announcement-button {
+    width: fit-content;
+    border: none;
+    border-radius: 1.8rem;
+    background-color: white;
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--main-background-color);
+}
+
+.announcement-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    grid-row-gap: 3rem;
+}
+
+.photo-caption {
+    position: relative;
+    top: -70px;
+    left: 50px;
+
+    color: white;
+    font-weight: bold;
+}

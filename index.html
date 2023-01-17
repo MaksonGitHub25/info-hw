@@ -7,11 +7,15 @@
 		<link rel="stylesheet" href="./styles/header.css" />
 		<link rel="stylesheet" href="./styles/footer.css" />
 		<link rel="stylesheet" href="./styles/ourGraduates.css" />
+		<link rel="stylesheet" href="./styles/courseAnnouncement.css" />
 		<title>InfoWebSite</title>
 	</head>
 	<body>
 		{{> header }}
-		<main>{{> ourGraduates }}</main>
+		<main>
+            {{> ourGraduates }}
+            {{> courseAnnouncement }}
+        </main>
 		{{> footer }}
 		<script type="module" src="/main.js"></script>
 	</body>
