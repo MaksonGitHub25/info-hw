@@ -1,5 +1,4 @@
 .header {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -37,7 +36,7 @@
 
 .under-header-text {
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 34px;
