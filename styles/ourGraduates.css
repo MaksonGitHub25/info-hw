@@ -1,0 +1,38 @@
+.our-graduates {
+    font-family: sans-serif;
+
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    background-image: url(../assets/backgroundOurGraduates.svg);
+}
+
+.our-graduates-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.our-graduates-cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.our-graduates-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
