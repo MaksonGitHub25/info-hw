@@ -1,0 +1,14 @@
+.Slogan_rectangle {
+    background-color: #1f91cf;
+    height: 659px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 74px;
+    text-align: center;
+    padding: 100px 0;
+
+    color: #FFFFFF;
+}

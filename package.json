@@ -11,6 +11,18 @@
   "devDependencies": {
     "vite": "^4.0.0"
   },
+  "description": "ЖЕСТКОЕ БДСМ С МУЖИКАМИ",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksonGitHub25/info-hw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaksonGitHub25/info-hw/issues"
+  },
+  "homepage": "https://github.com/MaksonGitHub25/info-hw#readme",
   "dependencies": {
     "vite-plugin-handlebars": "^1.6.0"
   }
