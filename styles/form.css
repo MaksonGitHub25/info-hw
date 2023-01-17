@@ -1,0 +1,117 @@
+.form-section {
+    background-image: url('../img/FormBG.png');
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    padding: 8rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.align-form {
+    display: flex;
+    justify-content: center;
+}
+
+.auth{
+    padding: 80px 0px 20px;
+    width: 782px;
+    height: 586px;
+    background-color: rgba(100, 100, 100, 0.6);
+    border-radius: 5px;
+    border: solid 1px cornflowerblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+}
+.auth-title{
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 75px;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+
+/*input*/
+
+.input{
+    display: block;
+    width: 400px;
+    height: 50px;
+    font-size: 1.7rem;
+    padding: 8px 10px;
+    border: 1px solid rgb(31, 31, 31);
+    font-family: inherit;
+    background-color: rgb(63, 63, 63, 0);
+    margin-bottom: 25px;
+}
+.input:focus{
+    outline: 0;
+    border-color: #2c93e7;
+}
+
+/*select*/
+
+.select {
+    color: #8d8d8d;
+    display: block;
+    width: 260px;
+    height: 55px;
+    font-size: 1.7rem;
+    padding: 8px 10px;
+    border: 1px solid rgb(31, 31, 31);
+    font-family: inherit;
+    background-color: rgb(63, 63, 63, 0);
+    margin-bottom: 30px;
+}
+.select:focus{
+    outline: 0;
+    border-color: #2c93e7;
+}
+.checkbox{
+    background-color: #8d8d8d;
+    accent-color: #2c93e7;
+    width: 25px;
+    height: 25px;
+}
+
+.btn{
+    font-family: inherit;
+    color: #121212;
+    font-size: 1.7rem;
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border: 0;
+    background-color: #2c93e7;
+    margin: 20px 0px 50px;
+}
+.btn:focus{
+    outline: 0;
+}
+.btn:hover,
+.btn:focus{
+    background-color: #1e659e;
+    cursor: pointer;
+}
+.btn:active{
+    background-color: #123f64
+}
+
+.link{
+    text-align: center;
+    color: #46acff;
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
