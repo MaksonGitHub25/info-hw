@@ -1,6 +1,6 @@
 const modalTrigger = document.querySelectorAll('[data-modal]'),
     modal = document.querySelector('.modal'),
-    modalCloseBtn = document.querySelector('[data-close]');
+    modalCloseBtn = document.querySelector('[data-close]'),
     modalSubmit = document.querySelector('[data-submit]');
 
 

@@ -1,7 +1,7 @@
 #our-graduates {
     font-family: 'Roboto', sans-serif;
 
-    padding: 8rem 3rem;
+    padding: 7rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -10,7 +10,7 @@
 }
 
 .our-graduates-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
 }
