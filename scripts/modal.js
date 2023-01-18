@@ -1,6 +1,7 @@
 const modalTrigger = document.querySelectorAll('[data-modal]'),
       modal = document.querySelector('.modal'),
-      modalCloseBtn = document.querySelector('[data-close]');
+      modalSubmit = document.querySelector('[data-submit]');
+
 
 function closeModal() {
     modal.classList.add('hide');
@@ -20,10 +21,9 @@ modalTrigger.forEach(btn => {
         });
     });
 
-modalCloseBtn.addEventListener('click', closeModal);
 
 modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
+    if (e.target === modal || e.target.getAttribute('data-close') == "") {
         closeModal();
     }
 });
@@ -42,3 +42,46 @@ function showModalByScroll() {
 }
 
 window.addEventListener('scroll', showModalByScroll);
+
+modalSubmit.addEventListener('click', (e) => {
+    e.preventDefault();
+    const inputs = document.querySelectorAll('[data-input]');
+    const checkbox = document.querySelector('[data-checkbox]');
+
+    let isValid = true;
+    inputs.forEach((input) => {
+        if(input.value === '' || !checkbox.checked){
+            isValid = false;
+        }
+    });
+
+    if(!isValid){
+        alert("Щоб надіслати запит, ви повинні заповнити всі дані та погодитися з нашими умовами користування");
+    }else{
+      showThanksModal();
+    }
+});
+
+function showThanksModal() {
+    const prevModalDialog = document.querySelector('.modal__dialog');
+
+    prevModalDialog.classList.add('hide');
+    openModal();
+
+    const thanksModal = document.createElement('div');
+    thanksModal.classList.add('modal__dialog');
+    thanksModal.innerHTML = `
+        <div class="modal__content">
+            <div class="modal__close" data-close>×</div>
+            <div class="modal__title">Дякую за довіру</div>
+        </div>
+    `;
+
+    document.querySelector('.modal').append(thanksModal);
+    setTimeout(() => {
+        thanksModal.remove();
+        prevModalDialog.classList.add('show');
+        prevModalDialog.classList.remove('hide');
+        closeModal();
+    }, 4000);
+}

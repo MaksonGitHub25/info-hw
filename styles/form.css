@@ -137,6 +137,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+
 .modal__dialog {
     max-width: 500px;
     margin: 40px auto;
@@ -194,6 +195,17 @@
 
 .show {
     display: block;
+    animation-name: opacityShow;
+    animation-duration: 0.7s;
+}
+
+@keyframes opacityShow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .hide {
