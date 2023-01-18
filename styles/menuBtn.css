@@ -4,8 +4,8 @@
 
 	border-top-right-radius: 1rem;
 	border-bottom-right-radius: 1rem;
-	border: none;
-	background-color: pink;
+	border: 1px solid #1f91cf;
+	background-color: white;
 	cursor: pointer;
 }
 
@@ -22,7 +22,8 @@
 .menu {
 	border-top-right-radius: 1rem;
 	border-bottom-right-radius: 1rem;
-	background-color: pink;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid #1f91cf;
 	width: fit-content;
 	padding: 1rem 1.2rem;
     font-family: sans-serif;
@@ -39,6 +40,10 @@ ul {
 
 a:visited {
     color: black;
+}
+
+a:hover {
+	text-shadow: 0.5px 0.5px 1px #1f91cf;
 }
 
 

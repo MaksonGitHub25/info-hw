@@ -34,7 +34,14 @@
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--main-background-color);
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
+
+.announcement-button:hover {
+    background-color: rgb(158, 158, 158);
+}
+
 
 .announcement-card-wrapper {
     display: grid;
