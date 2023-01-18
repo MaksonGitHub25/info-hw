@@ -33,3 +33,12 @@ document.addEventListener('keydown', (e) => {
         closeModal();
     }
 });
+
+function showModalByScroll() {
+    if (window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight -1) {
+        openModal();
+        window.removeEventListener('scroll', showModalByScroll);
+    }
+}
+
+window.addEventListener('scroll', showModalByScroll);
