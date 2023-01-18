@@ -12,20 +12,25 @@
 		<link rel="stylesheet" href="./styles/footer.css" />
 		<link rel="stylesheet" href="./styles/ourGraduates.css" />
 		<link rel="stylesheet" href="./styles/courseAnnouncement.css" />
+		<link rel="stylesheet" href="./styles/ourPride.css" />
 		<link rel="stylesheet" href="./styles/slogan.css" />
+		<link rel="stylesheet" href="./styles/menuBtn.css" />
 		<title>InfoWebSite</title>
 	</head>
 	<body>
+        {{> menuBtn }}
 		{{> header }}
-		<main>
+        <main>
 			{{> firstSlide }}
             {{> ourGraduates }}
             {{> courseAnnouncement }}
+            {{> ourPride }}
 			{{> form }}
         	{{> slogan }}
         </main>
 		{{> footer }}
 		<script type="module" src="./scripts/modal.js"></script>
-		<script type="module" src="/main.js"></script>
+		<script type="module" src="./scripts/toggleMenu.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	</body>
 </html>

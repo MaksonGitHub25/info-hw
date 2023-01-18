@@ -1,0 +1,54 @@
+#our-pride-content {
+    font-family: sans-serif;
+    background-image: url(../assets/ourPrideBackground.svg);
+    background-repeat: no-repeat;
+    padding-left: 20rem;
+    padding-top: 6rem;
+    padding-bottom: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    height: fit-content;
+}
+
+.our-pride-title {
+    padding-left: 8rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.our-pride-text-block {
+    width: 400px;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.our-pride-text-block-title {
+    font-size: 2rem;
+}
+
+.our-pride-text-block-body {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.man-photo-wrapper {
+    width: fit-content;
+    position: absolute;
+    top: 2663px;
+    left: 910px;
+}
+
+.man-photo-wrapper img {
+    height: 760px;
+}

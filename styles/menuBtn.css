@@ -1,0 +1,99 @@
+#menu-open-btn {
+	position: fixed;
+	top: 350px;
+
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	border: none;
+	background-color: pink;
+	cursor: pointer;
+}
+
+.menu-open-btn-text {
+	font-family: sans-serif;
+	font-size: 1.2rem;
+	letter-spacing: -3px;
+
+	padding: 0.7rem 0.3rem;
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+}
+
+.menu {
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	background-color: pink;
+	width: fit-content;
+	padding: 1rem 1.2rem;
+    font-family: sans-serif;
+
+	position: fixed;
+	top: 315px;
+	left: -205px;
+}
+
+ul {
+	padding-top: 0.3rem;
+	padding-left: 1rem;
+}
+
+a:visited {
+    color: black;
+}
+
+
+.openMenu {
+    transition: all;
+	animation: openMenuAnim 200ms ease-in-out forwards;
+}
+
+.openMenuButton {
+    transition: all;
+	animation: openMenuButtonAnim 200ms ease-in-out forwards;
+}
+
+.closeMenu {
+    transition: all;
+	animation: closeMenuAnim 200ms ease-in-out forwards;
+}
+
+.closeMenuButton {
+    transition: all;
+	animation: closeMenuButtonAnim 200ms ease-in-out forwards;
+}
+
+@keyframes openMenuAnim {
+	from {
+		left: -205px;
+	}
+	to {
+		left: 0px;
+	}
+}
+
+@keyframes closeMenuAnim {
+	from {
+        left: 0px;
+    }
+	to {
+        left: -205px;
+	}
+}
+
+@keyframes openMenuButtonAnim {
+	from {
+		left: 0px;
+	}
+	to {
+		left: 205px;
+	}
+}
+
+@keyframes closeMenuButtonAnim {
+	from {
+        left: 205px;
+	}
+	to {
+        left: 0px;
+	}
+}

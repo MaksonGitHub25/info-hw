@@ -1,6 +1,6 @@
 const modalTrigger = document.querySelectorAll('[data-modal]'),
-      modal = document.querySelector('.modal'),
-      modalCloseBtn = document.querySelector('[data-close]');
+    modal = document.querySelector('.modal'),
+    modalCloseBtn = document.querySelector('[data-close]');
 
 function closeModal() {
     modal.classList.add('hide');
@@ -15,10 +15,10 @@ function openModal() {
 }
 
 modalTrigger.forEach(btn => {
-        btn.addEventListener('click', () => {
-            openModal();
-        });
+    btn.addEventListener('click', () => {
+        openModal();
     });
+});
 
 modalCloseBtn.addEventListener('click', closeModal);
 
@@ -35,10 +35,18 @@ document.addEventListener('keydown', (e) => {
 });
 
 function showModalByScroll() {
-    if (window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight -1) {
+    if (window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
         openModal();
         window.removeEventListener('scroll', showModalByScroll);
     }
 }
 
 window.addEventListener('scroll', showModalByScroll);
+
+
+// ---------------------------------------------
+
+const btn = document.querySelector('.btn');
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+});

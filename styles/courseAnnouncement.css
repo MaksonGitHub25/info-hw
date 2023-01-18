@@ -2,7 +2,7 @@
     --main-background-color: #1f91cf;
 }
 
-.announcement-content {
+#announcement-content {
     padding: 2rem 6rem;
 
     font-family: sans-serif;
@@ -51,4 +51,13 @@
 
     color: white;
     font-weight: bold;
+}
+
+.photo-block {
+    transition: all 200ms ease;
+}
+
+.photo-block:hover {
+    position: relative;
+    transform: scale(1.2);
 }
