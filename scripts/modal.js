@@ -1,7 +1,7 @@
 const modalTrigger = document.querySelectorAll('[data-modal]'),
     modal = document.querySelector('.modal'),
     modalCloseBtn = document.querySelector('[data-close]'),
-    modalSubmit = document.querySelector('[data-submit]');
+    modalSubmit = document.querySelectorAll('[data-submit]');
 
 function closeModal() {
     modal.classList.add('hide');
@@ -51,23 +51,25 @@ btn.addEventListener('click', (e) => {
     e.preventDefault();
 });
 
-modalSubmit.addEventListener('click', (e) => {
-    e.preventDefault();
-    const inputs = document.querySelectorAll('[data-input]');
-    const checkbox = document.querySelector('[data-checkbox]');
-
-    let isValid = true;
-    inputs.forEach((input) => {
-        if (input.value === '' || !checkbox.checked) {
-            isValid = false;
+modalSubmit.forEach(element => {
+    element.addEventListener('click', (e) => {
+        e.preventDefault();
+        const inputs = document.querySelectorAll('[data-input]');
+        const checkbox = document.querySelector('[data-checkbox]');
+    
+        let isValid = true;
+        inputs.forEach((input) => {
+            if (input.value === '' || !checkbox.checked) {
+                isValid = false;
+            }
+        });
+    
+        if (!isValid) {
+            alert("Щоб надіслати запит, ви повинні заповнити всі дані та погодитися з нашими умовами користування");
+        } else {
+            showThanksModal();
         }
     });
-
-    if (!isValid) {
-        alert("Щоб надіслати запит, ви повинні заповнити всі дані та погодитися з нашими умовами користування");
-    } else {
-        showThanksModal();
-    }
 });
 
 function showThanksModal() {
