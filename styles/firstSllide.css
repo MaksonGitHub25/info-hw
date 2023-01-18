@@ -1,0 +1,40 @@
+.slide-section {
+    background-image: url('../img/firstSlide.jpg');
+    height: 864px;
+    background-repeat: no-repeat;
+    background-size: 100% 864px;
+    padding: 20px; 
+}
+
+.slide-text {
+    margin: 5%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 75px;
+
+    color: #FFFFFF;
+    text-shadow: 7px 3px 10px rgb(19, 19, 19);
+}
+
+.slide-button-wrapper {
+    margin: 250px 5%;
+}
+
+.slide-button {
+    width: fit-content;
+    border: none;
+    border-radius: 1.8rem;
+    color: #FFFFFF;
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: #1F91CF;
+    transition: all 0.5s ease;
+}
+
+.slide-button:hover {
+    background: #12587e;
+}

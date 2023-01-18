@@ -8,7 +8,11 @@
     font-size: 60px;
     line-height: 74px;
     text-align: center;
-    padding: 100px 0;
+    padding: 130px 20px;
 
     color: #FFFFFF;
+}
+
+.slogan-header {
+    text-shadow: 7px 3px 10px rgb(19, 19, 19);
 }
