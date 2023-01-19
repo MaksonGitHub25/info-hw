@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/icons/PHPLogo.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet" />
+
+		<title>I love PHP</title>
+		<script type="module" crossorigin src="./assets/index-99037b37.js"></script>
+		<link rel="stylesheet" href="./assets/index-74cf1a37.css" />
+	</head>
+	<body>
+		<button id="menu-open-btn">
+			<p class="menu-open-btn-text">Меню</p>
+		</button>
+
+		<div class="menu">
+			<p>Ссылки:</p>
+			<ul>
+				<li><a class="menu-link" href="#slide-section">Вирішуй проблеми</a></li>
+				<li><a class="menu-link" href="#our-graduates">Наші випускники</a></li>
+				<li>
+					<a class="menu-link" href="#announcement-content">Яким ти будеш</a>
+				</li>
+				<li>
+					<a class="menu-link" href="#our-pride-content">Наша гордість</a>
+				</li>
+				<li>
+					<a class="menu-link" href="#form-section">Потрібна допомога?</a>
+				</li>
+				<li>
+					<a class="menu-link" href="#Slogan_rectangle">Улюблений жарт</a>
+				</li>
+			</ul>
+		</div>
+		<header>
+			<div class="header">
+				<img src="./assets/icons/PHPLogo.png" alt="#" class="logo" />
+				<div class="header-text-container">
+					<h3 class="header-text">PHP</h3>
+					<h6 class="under-header-text">Мова Можливостей</h6>
+				</div>
+				<a href="./assets/pages/aboutUs.html" class="header-link"
+					><p class="header-text-about">Про нас та нашу компанію</p></a
+				>
+			</div>
+
+			<div class="strip"></div>
+		</header>
+		<main>
+			<div id="slide-section">
+				<p class="slide-text">Вирішуй проблеми<br />кращою мовою</p>
+				<div class="slide-button-wrapper">
+					<button data-modal class="slide-button">Замовити курс</button>
+				</div>
+			</div>
+			<div id="our-graduates">
+				<p class="our-graduates-title">Наші випускники</p>
+				<div class="our-graduates-cards-wrapper">
+					<div class="our-graduates-cards">
+						<div class="card">
+							<img
+								class="card-photo"
+								src="./assets/images/ourGraduatesPhoto1.svg"
+								alt="#" />
+							<p class="card-title">Працює у великому проекті</p>
+						</div>
+						<div class="card">
+							<img
+								class="card-photo"
+								src="./assets/images/ourGraduatesPhoto2.svg"
+								alt="#" />
+							<p class="card-title">
+								Займається розробкою delivery-of-bottles технології
+							</p>
+						</div>
+						<div class="card">
+							<img
+								class="card-photo"
+								src="./assets/images/ourGraduatesPhoto3.svg"
+								alt="#" />
+							<p class="card-title">Просто крутий хлопака</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="announcement-content">
+				<p class="announcement-title">Яким ти будеш після нашого курсу</p>
+				<div class="announcement-card-wrapper">
+					<div class="photo-block">
+						<img
+							class="card-photo"
+							src="./assets/images/announcementPhoto1.svg"
+							alt="#" />
+						<p class="photo-caption" style="color: black">Немає машини</p>
+					</div>
+					<div class="photo-block">
+						<img
+							class="card-photo"
+							src="./assets/images/announcementPhoto2.svg"
+							alt="#" />
+						<p class="photo-caption">Популярність</p>
+					</div>
+					<div class="photo-block">
+						<img
+							class="card-photo"
+							src="./assets/images/announcementPhoto3.svg"
+							alt="#" />
+						<p class="photo-caption">Розвиток</p>
+					</div>
+					<div class="photo-block">
+						<img
+							class="card-photo"
+							src="./assets/images/announcementPhoto4.svg"
+							alt="#" />
+						<p class="photo-caption">Нова команда</p>
+					</div>
+				</div>
+				<div class="announcement-button-wrapper">
+					<button data-modal class="announcement-button">Замовити курс</button>
+				</div>
+			</div>
+			<div id="our-pride-content">
+				<p class="our-pride-title">Наша гордість</p>
+				<div class="our-pride-text-block">
+					<p class="our-pride-text-block-title">Микола комбайнер</p>
+					<p class="our-pride-text-block-body">
+						Я почав кодити на пхп за допомогою цього сайту і тепер в мене немає
+						друзів, але є помилка на 73 рядку<br />Хочу бути ->, але я просто =>
+					</p>
+				</div>
+			</div>
+			<div class="man-photo-wrapper">
+				<img src="./assets/images/ourPrideMan.svg" alt="#" />
+			</div>
+			<div id="form-section">
+				<h1 class="auth-title">Потрібна допомога?</h1>
+				<div class="align-form">
+					<div class="auth">
+						<form action="/" method="post">
+							<div class="form-group">
+								<input
+									required
+									class="input"
+									id="input-name"
+									type="text"
+									name="name"
+									placeholder="Ваше повне ім`я" />
+							</div>
+
+							<div class="form-group">
+								<input
+									required
+									class="input"
+									id="input-mail"
+									type="email"
+									name="email"
+									placeholder="Ваш e-mail" />
+							</div>
+
+							<div class="form-group">
+								<input
+									required
+									class="input"
+									id="input-tel"
+									name="tel"
+									type="tel"
+									placeholder="Ваш номер телефону" />
+							</div>
+
+							<div>
+								<select class="select" id="input-city" name="city">
+									<option value="dnipro">Дніпро</option>
+									<option value="kyiv">Київ</option>
+									<option value="kharkov">Харків</option>
+									<option value="lvov">Львів</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<input
+									required
+									class="checkbox"
+									type="checkbox"
+									name="rules"
+									id="rules" />
+								<label for="rules"
+									><a class="link-form" href="./assets/pages/policy.html"
+										>Приймаю умови користування</a
+									></label
+								>
+							</div>
+							<button data-submit class="btn" type="submit">
+								Зв`язатись з нами
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal">
+				<div class="modal__dialog">
+					<div class="modal__content">
+						<form action="#">
+							<h3 class="auth-title" style="font-size: 24px">
+								Потрібна допомога?
+							</h3>
+							<div data-close class="modal__close">&times;</div>
+							<div class="form-group">
+								<input
+									required
+									data-input
+									class="input"
+									id="input-name"
+									type="text"
+									name="name"
+									placeholder="Ваше повне ім`я" />
+							</div>
+
+							<div class="form-group">
+								<input
+									required
+									data-input
+									class="input"
+									id="input-mail"
+									type="email"
+									name="email"
+									placeholder="Ваш e-mail" />
+							</div>
+
+							<div class="form-group">
+								<input
+									required
+									required
+									data-input
+									class="input"
+									id="input-tel"
+									name="tel"
+									type="tel"
+									placeholder="Ваш номер телефону" />
+							</div>
+
+							<div>
+								<select class="select" name="city">
+									<option value="dnipro">Дніпро</option>
+									<option value="kyiv">Київ</option>
+									<option value="kharkov">Харків</option>
+									<option value="lvov">Львів</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<input
+									required
+									data-checkbox
+									class="checkbox"
+									type="checkbox"
+									name="rules"
+									id="rules" />
+								<label for="rules"
+									><a class="link-form" href="./assets/pages/policy.html"
+										>Приймаю умови користування</a
+									></label
+								>
+							</div>
+
+							<button data-submit class="btn" type="submit">
+								Зв`язатись з нами
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="Slogan_rectangle">
+				<p></p>
+				<h3 class="slogan-header">Улюблений жарт нашої команди</h3>
+				<br />
+				<span class="slogan-header">Іван:</span> справді є тренажери, які
+				палицею в живіт тикають і струмом б'ють?<br />
+				<span class="slogan-header">Кирилл:</span> ага<br />
+				<span class="slogan-header">Іван:</span> це для навчання асемблеру?<br />
+				<span class="slogan-header">Кирилл:</span> або для відучення від ПХП)))
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="d-flex justify-content-center">
+							<div class="mr-5">
+								<h4>Зв`яжись з нами</h4>
+								<ul class="list-unstyled">
+									<li>
+										<a href="tel:068-176-8249"
+											><img
+												class="arrow-footer"
+												src="./assets/icons/right-arrow-svgrepo-com.svg" />380681768249</a
+										>
+									</li>
+									<li>
+										<a href="tel:067-825-2020"
+											><img
+												class="arrow-footer"
+												src="./assets/icons/right-arrow-svgrepo-com.svg" />+380678252020</a
+										>
+									</li>
+									<li>
+										<a href="mailto:klymenvlad@gmail.com"
+											><img
+												class="arrow-footer"
+												src="./assets/icons/right-arrow-svgrepo-com.svg" />klymenvlad@gmail.com</a
+										>
+									</li>
+									<li>
+										<a href="mailto:pozitivmaks541@gmail.com"
+											><img
+												class="arrow-footer"
+												src="./assets/icons/right-arrow-svgrepo-com.svg" />pozitivmaks541@gmail.com</a
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="mx-5">
+								<h4>Про нас</h4>
+								<p>Звичайні хлопці, які зрозуміли, що ПХП то є зле</p>
+								<a href="./assets/pages/aboutUs.html">Дізнатись більше...</a>
+							</div>
+							<div class="ml-5">
+								<h4>Слідкуй за кращим</h4>
+								<ul class="list-inline">
+									<li>
+										<img
+											class="arrow-footer"
+											src="./assets/icons/right-arrow-svgrepo-com.svg" /><a
+											target="_blank"
+											href="https://www.php.net/"
+											><i>Наша улюблена сторінка</i></a
+										>
+									</li>
+									<li>
+										<img
+											class="arrow-footer"
+											src="./assets/icons/right-arrow-svgrepo-com.svg" /><a
+											target="_blank"
+											href="https://github.com/php/web-php"
+											><i>Варто завітати</i></a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-center">
+							Copyright &copy; 2023 VladosickAndMaksonchickCorporation
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
