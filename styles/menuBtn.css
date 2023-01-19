@@ -38,12 +38,16 @@ ul {
 	padding-left: 1rem;
 }
 
-a:visited {
+.menu-link {
+	transition: all 0.5s ease;
+}
+
+.menu-link:visited {
     color: black;
 }
 
-a:hover {
-	text-shadow: 0.5px 0.5px 1px #1f91cf;
+.menu-link:hover {
+	color: rgb(134, 134, 134)
 }
 
 

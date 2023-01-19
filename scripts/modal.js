@@ -46,31 +46,24 @@ window.addEventListener('scroll', showModalByScroll);
 
 // ---------------------------------------------
 
-const btn = document.querySelector('.btn');
-btn.addEventListener('click', (e) => {
-    e.preventDefault();
-});
+const form = document.querySelector("form");
+const modalForm = document.querySelector(".modal form");
 
-modalSubmit.forEach(element => {
-    element.addEventListener('click', (e) => {
-        e.preventDefault();
-        const inputs = document.querySelectorAll('[data-input]');
-        const checkbox = document.querySelector('[data-checkbox]');
-    
-        let isValid = true;
-        inputs.forEach((input) => {
-            if (input.value === '' || !checkbox.checked) {
-                isValid = false;
-            }
-        });
-    
-        if (!isValid) {
-            alert("Щоб надіслати запит, ви повинні заповнити всі дані та погодитися з нашими умовами користування");
-        } else {
-            showThanksModal();
-        }
+form.addEventListener("submit", handleFormSubmit);
+modalForm.addEventListener("submit", handleFormSubmit);
+
+function handleFormSubmit(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+    Object.entries(data).forEach(([key, value]) => {
+        localStorage.setItem(key, value);
     });
-});
+    showThanksModal();
+}
 
 function showThanksModal() {
     const prevModalDialog = document.querySelector('.modal__dialog');

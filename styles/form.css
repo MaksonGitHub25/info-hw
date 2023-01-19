@@ -31,7 +31,7 @@
     font-size: 20px;
     color: #000000;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
@@ -135,6 +135,7 @@
     height: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -210,4 +211,9 @@
 
 .hide {
     display: none;
+}
+
+.link-form {
+    font-size: 25px;
+    color: #000;
 }
